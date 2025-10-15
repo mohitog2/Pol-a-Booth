@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #fff9f5;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    animation: forwards 3s ease-in;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: ff8c94;
+}
+
+button {
+    background: #ff8c94;
+    color: #fff;
+    margin-top: 20px;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #ff677d;
+    transform: scale(1.05);
+}
+
+.camera-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#camera {
+    width: 320px;
+    height: 240px;
+    border-radius: 10px;
+    background: #000;
+    margin-bottom: 15px;
+}
+
+.note {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+#grey-btn {
+    background: #999;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 15px;
+    transition: all 0.2s;
+}
+
+#grey-btn.active {
+    background: #555;
+}
+
+#download-btn {
+    margin: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.preview-area {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.polaroid {
+    background: #fff;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 260px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.polaroid img {
+    width: 100%;
+    height: 500px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.watermark {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 0.8rem;
+    color: #aaa;
+    font-weight: 500;
+}

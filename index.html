@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pol-a-Booth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" id="home-page">
+        <h2 class="logo">Pol-a-Booth</h2>
+        <p class="tagline">Capture your moments wth ease!!</p>
+        <button id="start-btn">Start Camera</button>
+    </div>
+
+    <div class="camera-section hidden" id="camera-section">
+        <video id="camera" autoplay playsinline></video>
+        <p class="note">Smile! Capture your 3 best shots 😄</p>
+
+        <div class="controls">
+            <button id="capture-btn">Capture</button>
+            <button id="retake-btn" class="hidden">Retake</button>
+            <button id="grey-btn">Grey Filter: OFF</button>
+        </div>
+        <div class="preview-area" id="preview-area"></div>
+        <button id="download-btn" class="hidden">Download Polaroid</button>
+
+    </div>
+
+    <canvas id="canvas" class="hidden"></canvas>
+    <script src="script.js"></script>
+</body>
+
+</html>
